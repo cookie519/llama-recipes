@@ -32,7 +32,16 @@ class custom_dataset:
     train_split: str = "train"
     test_split: str = "validation"
     data_path: str = ""
-    
+
+
+@dataclass
+class redisqa_dataset:
+    dataset: str = "redisqa_dataset"
+    file: str = "recipes/quickstart/finetuning/datasets/redisqa_dataset.py"
+    train_split: str = "train"
+    test_split: str = "test"
+
+
 @dataclass
 class llamaguard_toxicchat_dataset:
     dataset: str = "llamaguard_toxicchat_dataset"
